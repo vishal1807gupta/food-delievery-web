@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .rapper{
+             /* display: grid;
+            grid-gap: 0.01rem; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; 
+            grid-template-rows: 1fr 1fr 1fr 1fr; */
+            border: 2px solid black;
+            padding: 15px 15px;
+            transform: skew(20deg);
+            margin-top: 10vh;
+            border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        }
+        
+        
+        body{
+            background-image: url('http://www.freedigitalphotos.net/images/previews/calculator-on-digital-background-100273747.jpg');
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        input[type="text"]{
+            height: 50px;
+        }
+        
+      
+input[type="button"]{
+    border: 1px solid black;
+    height: 32px;
+    width: 32px;
+   
+} 
+input[type="button"]:hover{
+   color: white;
+   background-color: rgb(40, 233, 50);
+   
+} 
+
+
+    </style>
+</head>
+<body >
+    <div class="container">
+    <div class="rapper">
+        <form name="cal">
+            <input type="text" name="display" >
+            <br> <br>
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="/" onclick="cal.display.value+='/'">
+            <input type="button" value="DEL" onclick="cal.display.value=''" id="del">
+            <br> <br>
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="*" onclick="cal.display.value+='*'">
+            <br> <br>
+            <input type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="-" onclick="cal.display.value+='-'">
+            <br> <br>
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="+" onclick="cal.display.value+='+'">
+            <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+          
+        </form>
+    </div>
+    </div>
+</body>
+</html>
