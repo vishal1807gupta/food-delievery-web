@@ -12,6 +12,279 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
 </head>
+    <style>
+        /*css reset*/
+*{
+   
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+#logo img{
+    height: 120px;
+    width: 160px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    padding: 10px 0px;
+    height: 200px;
+   
+  
+}
+#logo{
+    margin: 8px 15px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+   
+   
+}
+
+#navbar ul li a{
+   
+    font-size: 60px;
+    color: white;
+    display: block;
+    padding: 40px 22px;
+    margin:auto;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 60px;
+   
+}
+/* Home section */
+#home p{
+    font-size: 1.5rem;
+}
+h1{
+    color: white;
+    font-family: 'Lobster', cursive;
+    
+}
+button{
+    margin: 17px auto;
+    font-size: 1.5rem;
+    padding: 0px 15px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: yellow;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?cs=srgb&dl=pexels-jane-d-1092730.jpg&fm=jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 61%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.86;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 20px;
+}
+/* services-section */
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    border: 2px solid brown;
+    padding: 100px 60px;
+    margin: 0px 20px;
+    border-radius: 60px;
+    font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+   
+}
+#services .box img{
+    width: 400px;
+    height: 300px;
+   
+}
+#services-container{
+    position: absolute;
+    top: 1130px;
+    
+   
+}
+#ooi{
+    color: black;
+    font-size: 4rem;
+}
+#bha{
+    font-size: 4rem;
+}
+/* client-section */
+#client-section{
+    display: flex;
+    position: relative;
+    top: 1500px;
+    margin: 75px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.client-item img{
+    height: 190px;
+    width: 250px;
+}
+#koi{
+    color: black;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+   
+   position: relative;
+   left: 720px;
+   bottom: 100px;
+   
+}
+.client-item{
+    padding: 60px;
+    position: relative;
+    top: 90px;
+   right: 230px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://i1.wp.com/www.westside.social/wp-content/uploads/2017/12/food-background-food-concept-with-various-tasty-fresh-ingredients-for-cooking-italian-food-ingredients-view-from-above-with-copy-space_1220-1491-2-e1513108150131.jpg?ssl=1');
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact{
+    position: relative;
+    top: 1450px;
+    margin: 50px 0px;
+}
+#bhai{
+    color: black;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+}
+#contact-kro::before{
+    content: "";
+    position: absolute;
+    top: 2900px;
+    background: url('https://st2.depositphotos.com/1265075/7446/i/950/depositphotos_74468913-stock-photo-contact-us-icons-on-cubes.jpg') no-repeat center center/cover;
+    height: 70%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+#contact-box input{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   padding: 0.5rem;
+   text-align: center;
+   margin: 20px;
+   font-size: 1.3rem;
+   
+}
+#contact-box textarea{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size:1.3rem;
+    text-align: center;
+}
+.majak{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#contact{
+    border: 5px solid black;
+    box-shadow: -30px 30px 20px grey;
+    transform: skew(14deg);
+    display: block;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 2970px;
+    left: 900px;
+    border-radius: 80px;
+    padding: 70px;
+}
+#gussa{
+    position:relative;
+  top: 3000px;
+    color: white;
+    background-color: black;
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+}
+#soi{
+    position:relative;
+  top: 3000px;
+  right: 10px;
+    color: white;
+    background-color: black;
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+}
+    </style>
 <body>
     <nav id="navbar">
         <div id="logo">
